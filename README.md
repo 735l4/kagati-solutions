@@ -1,6 +1,6 @@
 # Question 2
 ```
-SELECT count(*) as number_of_orders, CASE
+SELECT orders_table.order_id, count(*) as number_of_orders, CASE
     WHEN orders_table.sales_type = "Normal"
         THEN sum(normal_price)
     WHEN orders_table.sales_type = "Promotion"
