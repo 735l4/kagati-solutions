@@ -15,26 +15,26 @@ FROM orders_table INNER JOIN orders_products_table ON orders_table.order_id = or
 
 ## Install composer dependency in project folder and copy env file
 ```
-$ composer install
-$ cp .env.example .env
+composer install
+cp .env.example .env
 ```
 
 ## Generate app key using this command 
 ```
-$ php artisan key:generate
+php artisan key:generate
 ```
 
 Change database credentials in DB_DATABASE field inside .env file. 
 
 ## Run database migration and seed wtih dummy data using this command
 ```
-$ php artisan migrate 
-$ php artisan db:seed 
+php artisan migrate 
+php artisan db:seed 
 ```
 
 ## Serve the website
 ```
-$ php artisan serve
+php artisan serve
 ```
 
 ## Links: 
