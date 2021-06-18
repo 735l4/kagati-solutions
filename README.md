@@ -24,12 +24,12 @@ $ php artisan db:seed
 
 Gst calculator link 
 Location: app/Http/Controller/GstCalculator.php 
-- **[Gst Calculator](http://127.0.0.1:8000/gst-calculator) 
+- [Gst Calculator](http://127.0.0.1:8000/gst-calculator) 
 
 Order submission:  
 Location: app/Http/Controller/OrderController.php 
 
 - [Complete order](http://127.0.0.1:8000/complete-order/1) 
 
-Fetch Reward info
+Fetch Users Reward info
 - [Fetch reward info](http://127.0.0.1:8000/rewards)
