@@ -32,24 +32,5 @@ class OrderController extends Controller
         $user = User::findOrFail(1);
         $rewards = $user->rewards()->get();
         return view('rewards.list')->with(["rewards" => $rewards, "user" => $user]);
-        foreach($rewards as $reward) {
-            // return '
-            // <table>
-            //     <tr>
-            //         <th>User</th>
-            //         <th>points</th>
-            //         <th>Amount</th>
-            //         <th>Expires on </th>
-            //     </tr>
-            //     <tr>
-            //         <td>'.$user->name.'</td>
-            //         <td>'.$reward->points.'
-            //         <td>$'. ($reward-> points * 0.01).'
-            //         <td>'. $reward->expires_on.'
-            //     </tr>
-            // </table> 
-            // ';
-        }
-
     }
 }

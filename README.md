@@ -1,4 +1,17 @@
-# Steps to setup
+# Question 2
+```
+SELECT count(*) as number_of_orders, CASE
+    WHEN orders_table.sales_type = "Normal"
+        THEN sum(normal_price)
+    WHEN orders_table.sales_type = "Promotion"
+        THEN sum(promotion_price)
+    END AS total_sales_amount
+FROM orders_table INNER JOIN orders_products_table ON orders_table.order_id = orders_products_table.order_id GROUP BY orders_products_table.order_id;
+```
+
+# Question 1
+
+## Steps to setup
 
 ## Install composer dependency in project folder and copy env file
 ```
@@ -19,6 +32,10 @@ $ php artisan migrate
 $ php artisan db:seed 
 ```
 
+## Serve the website
+```
+$ php artisan serve
+```
 
 ## Links: 
 
