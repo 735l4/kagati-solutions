@@ -10,7 +10,9 @@ FROM orders_table INNER JOIN orders_products_table ON orders_table.order_id = or
 ```
 
 # Question 1
-[link to flow chart](https://drive.google.com/file/d/1dpm3jUAGTZq7PR3hFPcXw-Fc1wQCFQSe/view?usp=sharing)
+[Flowchart diagram on the reward system](https://drive.google.com/file/d/1dpm3jUAGTZq7PR3hFPcXw-Fc1wQCFQSe/view?usp=sharing)
+
+[MySQL database schema for this reward system](https://drive.google.com/file/d/1jkKT02gUCnNXFooDtkEm23jkCGhRE4d9/view?usp=sharing)
 
 ## Steps to setup
 
