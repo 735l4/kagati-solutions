@@ -16,6 +16,14 @@ FROM orders_table INNER JOIN orders_products_table ON orders_table.order_id = or
 
 ## Steps to setup
 
+Either follow the installation guide from laravel docs
+[Laravel installation docs](https://laravel.com/docs/8.x/installation)
+
+OR
+
+First get composer installed in your system 
+[composer](https://getcomposer.org)
+
 ## Install composer dependency in project folder and copy env file
 ```
 composer install
@@ -28,6 +36,14 @@ php artisan key:generate
 ```
 
 Change database credentials in DB_DATABASE field inside .env file. 
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=YOUR_DATABASE_NAME
+DB_USERNAME=root
+DB_PASSWORD=YOUR_DB_PASSWORD
+```
 
 ## Run database migration and seed wtih dummy data using this command
 ```
